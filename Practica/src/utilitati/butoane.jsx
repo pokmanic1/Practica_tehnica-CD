@@ -1,27 +1,23 @@
-function ButonColorat(props) {
+import { Link } from "react-router-dom";
+
+function AncoraColorata(props) {
     return (
-        <>
-            <button className="px-3 py-1 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] rounded-[20px]">
-                {props.title}
-            </button>
-        </>
-    )
+        <Link
+            to={props.ancora}
+            className="px-3 py-1 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] rounded-[20px] text-white">
+            {props.title}
+        </Link>
+    );
 }
-function ButonSur(props) {
+
+function AncoraSur(props) {
     return (
-        <>
-            <button className="px-3 py-1 bg-gray-300 text-black border border-black rounded-[20px]">
-                {props.title}
-            </button>
-        </>
-    )
+        <Link
+            to={props.ancora}
+            className="px-3 py-1 bg-gray-300 text-black border border-black rounded-[20px]">
+            {props.title}
+        </Link>
+    );
 }
 
-ButonColorat.defaultProps = {
-    title: "Default Title",
-    description: "Default Description"
-}
-
-export { ButonColorat, ButonSur };
-
-
+export { AncoraColorata, AncoraSur };
