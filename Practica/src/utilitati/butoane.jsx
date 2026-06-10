@@ -1,7 +1,7 @@
 function ButonColorat(props) {
     return (
         <>
-            <button className="px-3 py-2 bg-blue-700 rounded-[20px]">
+            <button className="px-3 py-1 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] rounded-[20px]">
                 {props.title}
             </button>
         </>
@@ -10,7 +10,7 @@ function ButonColorat(props) {
 function ButonSur(props) {
     return (
         <>
-            <button className="px-3 py-2 bg-blue-700 rounded-[20px]">
+            <button className="px-3 py-1 bg-gray-300 text-black border border-black rounded-[20px]">
                 {props.title}
             </button>
         </>
