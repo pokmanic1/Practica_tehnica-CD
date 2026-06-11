@@ -1,4 +1,5 @@
 import bgImage from '../../img/img-index/img-index-bg-1.svg'
+import index_sectiunea_ServiciiPrincipal from '../../img/img-index/Img_sectiunea_servicii_principale.svg'
 import index_sectiunea_DeCePet from '../../img/img-index/Img-index-sectiunea-DeCePet.svg'
 import { AncoraColorata, AncoraSur } from "../utilitati/butoane.jsx";
 
@@ -29,49 +30,23 @@ function Index() {
             <section className='w-full min-h-dvh bg-white flex justify-center items-center px-4 py-10'>
                 <div
                     className='
-                            border border-black rounded-2xl
-                            w-full md:w-[90%] xl:w-[60%]
-                            min-h-[500px]
-                            flex flex-col justify-center items-start
-                            px-6 sm:px-10 lg:px-[50px]
-                            bg-no-repeat
-                            bg-right'
+                            border border-black rounded-2xl w-full md:w-[90%] xl:w-[80%] max-w-[1200px] min-h-[500px] flex flex-col justify-center items-start px-6 sm:px-10 lg:px-[50px] bg-cover bg-no-repeat bg-right'
                     style={{
                         backgroundImage: `url(${index_sectiunea_DeCePet})`,
 
-                    }}
-                >
+                    }}>
                     <div
                         className='
-                                w-full md:max-w-[60%] lg:max-w-[45%]
-                                flex flex-col items-center md:items-start
-                                justify-center
-                                bg-white/80 backdrop-blur-sm
-                                py-6 px-5 sm:px-8
-                                rounded-2xl'
-                    >
+                                w-full md:max-w-[60%] lg:max-w-[45%] flex flex-col items-center md:items-start justify-center bg-white/80 backdrop-blur-sm py-6 px-5 sm:px-8 rounded-2xl'>
                         <h1
                             className='
-                                    font-poppins
-                                    text-[30px] sm:text-[36px] lg:text-[42px]
-                                    font-semibold
-                                    text-[#1A1A1A]
-                                    mb-4
-                                    leading-tight
-                                    text-center md:text-left'
-                        >
+                                    font-poppins text-[30px] sm:text-[36px] lg:text-[42px] font-semibold text-[#1A1A1A] mb-4 leading-tight text-center md:text-left'>
                             De ce <span className='text-[#2F80ED]'>„Pet Care”</span>
                         </h1>
 
                         <p
                             className='
-                                    text-black
-                                    text-center md:text-left
-                                    text-[15px] sm:text-[16px] lg:text-[18px]
-                                    leading-7 lg:leading-8
-                                    mb-8
-                                    font-light'
-                        >
+                                    text-blacktext-center md:text-lefttext-[15px] sm:text-[16px] lg:text-[18px]leading-7 lg:leading-8mb-8font-light'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Oferim grijă, profesionalism și atenție fiecărui animal,
                             pentru ca tu să ai liniștea că este pe cele mai bune mâini.
@@ -79,11 +54,32 @@ function Index() {
 
                         <AncoraColorata
                             title='Vezi Echipa'
-                            ancora='/team'
-                        />
+                            ancora='/team' />
                     </div>
                 </div>
             </section>
+
+
+            <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'
+                style={{ backgroundImage: `url("${index_sectiunea_ServiciiPrincipal}")` }}>
+                <div className='w-[90%] md:w-[80%]'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-[20px]'>
+                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
+                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
+                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
+                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'>
+                <div className='w-[90%] md:w-[80%]'>
+                        
+                </div>
+            </section>
+
         </>
     );
 }
