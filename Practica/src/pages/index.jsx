@@ -5,6 +5,92 @@ import { AncoraColorata, AncoraSur } from "../utilitati/butoane.jsx";
 
 function Index() {
     let a = '/Practica/img/img-index/img-index-bg-1.svg'
+const items = [
+    {
+        id: 1,
+        img: '',
+        nume: 'Popescu',
+        prenume: 'Ana',
+        recenzie: 'Personal foarte amabil și profesionist. Cățelul meu a fost tratat cu multă grijă și atenție.',
+    },
+    {
+        id: 2,
+        img: '',
+        nume: 'Ionescu',
+        prenume: 'Mihai',
+        recenzie: 'Servicii excelente și explicații clare. Recomand cu încredere această clinică veterinară.',
+    },
+    {
+        id: 3,
+        img: '',
+        nume: 'Rusu',
+        prenume: 'Elena',
+        recenzie: 'Am fost impresionată de răbdarea și dedicarea echipei. Pisica mea s-a simțit în siguranță.',
+    },
+    {
+        id: 4,
+        img: '',
+        nume: 'Munteanu',
+        prenume: 'Andrei',
+        recenzie: 'Programarea a fost rapidă, iar consultația foarte detaliată. O experiență plăcută.',
+    },
+    {
+        id: 5,
+        img: '',
+        nume: 'Ceban',
+        prenume: 'Maria',
+        recenzie: 'Oameni extraordinari! Au avut grijă de cățelul nostru ca și cum ar fi fost al lor.',
+    },
+    {
+        id: 6,
+        img: '',
+        nume: 'Dumitru',
+        prenume: 'Cristian',
+        recenzie: 'Profesionalism, curățenie și multă empatie. Cu siguranță vom reveni.',
+    },
+    {
+        id: 7,
+        img: '',
+        nume: 'Balan',
+        prenume: 'Irina',
+        recenzie: 'Medicii au răspuns la toate întrebările mele și mi-au oferit sfaturi utile.',
+    },
+    {
+        id: 8,
+        img: '',
+        nume: 'Luca',
+        prenume: 'Victor',
+        recenzie: 'Foarte mulțumit de serviciile primite. Atmosferă plăcută și personal dedicat.',
+    },
+    {
+        id: 9,
+        img: '',
+        nume: 'Sandu',
+        prenume: 'Gabriela',
+        recenzie: 'Pisica mea a primit îngrijirea de care avea nevoie. Mulțumim întregii echipe!',
+    },
+    {
+        id: 10,
+        img: '',
+        nume: 'Rotaru',
+        prenume: 'Daniel',
+        recenzie: 'Consultația a fost punctuală și foarte bine explicată. Recomand cu drag.',
+    },
+    {
+        id: 11,
+        img: '',
+        nume: 'Mocanu',
+        prenume: 'Alina',
+        recenzie: 'Un loc unde animalele sunt tratate cu respect și afecțiune. Suntem foarte mulțumiți.',
+    },
+    {
+        id: 12,
+        img: '',
+        nume: 'Nistor',
+        prenume: 'George',
+        recenzie: 'Servicii de calitate și personal prietenos. Cea mai bună alegere pentru animăluțul nostru.',
+    },
+];
     return (
         <>
             <section
@@ -30,7 +116,7 @@ function Index() {
             <section className='w-full min-h-dvh bg-white flex justify-center items-center px-4 py-10'>
                 <div
                     className='
-                            border border-black rounded-2xl w-full md:w-[90%] xl:w-[80%] max-w-[1200px] min-h-[500px] flex flex-col justify-center items-start px-6 sm:px-10 lg:px-[50px] bg-cover bg-no-repeat bg-right'
+                            border border-black rounded-2xl w-full md:w-[90%] xl:w-[80%] max-w-[1500px] min-h-[500px] flex flex-col justify-center items-start px-6 sm:px-10 lg:px-[50px] bg-cover bg-no-repeat bg-right'
                     style={{
                         backgroundImage: `url(${index_sectiunea_DeCePet})`,
 
@@ -62,7 +148,7 @@ function Index() {
 
             <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'
                 style={{ backgroundImage: `url("${index_sectiunea_ServiciiPrincipal}")` }}>
-                <div className='w-[90%] md:w-[80%]'>
+                <div className='w-[90%] md:w-[95%] lg:w-[80%]'>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-[20px]'>
                         <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
                         <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
@@ -73,12 +159,71 @@ function Index() {
             </section>
 
 
+            <style>
+                {`
+                    @keyframes scroll {
+                        from {
+                            transform: translateX(0);
+                        }
+                        to {
+                            transform: translateX(calc(-50% - 8px));
+                        }
+                    }
 
-            <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'>
-                <div className='w-[90%] md:w-[80%]'>
-                        
+                    .animate-scroll {
+                        width: max-content;
+                        animation: scroll 15s linear infinite;
+                    }
+
+                    .animate-scroll:hover {
+                        animation-play-state: paused;
+                    }
+                `}
+            </style>
+            <section className='w-full min-h-[40dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'>
+
+                <div className="overflow-hidden  my-auto w-[98%] sm:w-[90%] lg:w-[80%] xl:w-[70%] border-4 border-red-500">
+                    <div className="flex items-center gap-4 animate-scroll">
+                        {[...items, ...items].map((item, index) => (
+                            <div
+                                key={index}
+
+                                className="flex-shrink-0 w-[240px]    sm:w-[280px]    md:w-[320px]    lg:w-[340px]    h-[260px]    sm:h-[300px]    md:h-[340px]    bg-blue-600    text-white    rounded-3xl    shadow-xl">
+                                <div className="w-full h-full flex flex-col items-center justify-center py-6 px-5">
+                                    
+                                    <div className="w-[300px] h-[150px] rounded-[20px] overflow-hidden border-2 border-white mb-4 bg-white">
+                                        {item.img ? (
+                                            <img
+                                                src={item.img}
+                                                alt={`${item.nume} ${item.prenume}`}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        ) : (
+                                            <div className="w-full h-full flex items-center justify-center text-blue-600 text-sm">
+                                                IMG
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/* Nume */}
+                                    <h3 className="text-xl font-bold text-center">
+                                        {item.nume || "Nume"}
+                                    </h3>
+
+                                    <p className="text-sm opacity-80 mb-4">
+                                        {item.prenume || "Prenume"}
+                                    </p>
+
+                                    {/* Recenzie */}
+                                    <p className="text-sm text-center leading-6 font-normal">
+                                        {item.recenzie }
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </section>
+            </section >
 
         </>
     );
