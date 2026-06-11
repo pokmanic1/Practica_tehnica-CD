@@ -242,7 +242,7 @@ function Index() {
 
         <div className='text-center mb-12'>
             <span className='inline-block bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-full mb-4'>
-                🚨 Serviciu de Urgență Veterinară
+                 Serviciu de Urgență Veterinară
             </span>
 
             <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
@@ -259,7 +259,7 @@ function Index() {
         <div className='grid md:grid-cols-3 gap-6'>
 
             <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'>🕒</div>
+                <div className='text-4xl mb-4'></div>
 
                 <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
                     Program de urgență
@@ -277,7 +277,7 @@ function Index() {
             </div>
 
             <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'>📞</div>
+                <div className='text-4xl mb-4'></div>
 
                 <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
                     Contact rapid
@@ -297,7 +297,7 @@ function Index() {
             </div>
 
             <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'>🚑</div>
+                <div className='text-4xl mb-4'></div>
 
                 <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
                     Când să ne contactezi
