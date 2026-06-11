@@ -315,18 +315,7 @@ function Index() {
 
         </div>
 
-        <div className='mt-12 bg-white rounded-3xl p-8 border border-red-100'>
-            <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
-                Ce trebuie să faci înainte să ajungi la clinică?
-            </h3>
 
-            <ol className='space-y-4 text-gray-600 leading-7 list-decimal pl-5'>
-                <li>Păstrează calmul și încearcă să liniștești animalul.</li>
-                <li>Sună la numărul de urgență pentru a anunța sosirea.</li>
-                <li>Nu administra medicamente fără recomandarea medicului.</li>
-                <li>Transportă animalul în siguranță, folosind o pătură sau o cușcă de transport dacă este necesar.</li>
-            </ol>
-        </div>
 
     </div>
 </section>
