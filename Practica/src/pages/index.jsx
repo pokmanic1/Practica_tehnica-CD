@@ -237,7 +237,99 @@ function Index() {
                 </div>
             </section >
             
+                        <section className='w-full min-h-[90dvh] bg-white flex justify-center items-center px-4 py-[200px]'>
+    <div className='w-full max-w-6xl bg-red-50 border-2 border-red-200 rounded-[40px] p-8 md:p-14 shadow-xl'>
 
+        <div className='text-center mb-12'>
+            <span className='inline-block bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-full mb-4'>
+                🚨 Serviciu de Urgență Veterinară
+            </span>
+
+            <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
+                Ai o urgență?
+            </h2>
+
+            <p className='text-gray-600 text-lg max-w-3xl mx-auto leading-8'>
+                Înțelegem că situațiile neprevăzute pot apărea în orice moment.
+                Echipa noastră este pregătită să ofere asistență medicală rapidă
+                și profesionistă pentru animalele care necesită îngrijiri urgente.
+            </p>
+        </div>
+
+        <div className='grid md:grid-cols-3 gap-6'>
+
+            <div className='bg-white rounded-3xl p-8 shadow-md'>
+                <div className='text-4xl mb-4'>🕒</div>
+
+                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                    Program de urgență
+                </h3>
+
+                <p className='text-gray-600 leading-7'>
+                    Luni – Duminică
+                    <br />
+                    <span className='font-semibold text-red-600'>
+                        24/7
+                    </span>
+                    <br />
+                    Intervenim pentru cazurile care necesită asistență imediată.
+                </p>
+            </div>
+
+            <div className='bg-white rounded-3xl p-8 shadow-md'>
+                <div className='text-4xl mb-4'>📞</div>
+
+                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                    Contact rapid
+                </h3>
+
+                <p className='text-gray-600 leading-7 mb-6'>
+                    Sună imediat înainte de a ajunge la clinică pentru ca
+                    echipa noastră să se pregătească pentru primirea pacientului.
+                </p>
+
+                <a
+                    href="tel:+37360000000"
+                    className='inline-flex items-center justify-center bg-red-600 hover:bg-red-700 transition text-white font-semibold px-6 py-3 rounded-xl'
+                >
+                    +373 60 000 000
+                </a>
+            </div>
+
+            <div className='bg-white rounded-3xl p-8 shadow-md'>
+                <div className='text-4xl mb-4'>🚑</div>
+
+                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                    Când să ne contactezi
+                </h3>
+
+                <ul className='text-gray-600 leading-7 space-y-2 list-disc pl-5'>
+                    <li>Dificultăți de respirație</li>
+                    <li>Accidente sau traumatisme</li>
+                    <li>Convulsii</li>
+                    <li>Intoxicații</li>
+                    <li>Sângerări abundente</li>
+                    <li>Pierderea cunoștinței</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div className='mt-12 bg-white rounded-3xl p-8 border border-red-100'>
+            <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+                Ce trebuie să faci înainte să ajungi la clinică?
+            </h3>
+
+            <ol className='space-y-4 text-gray-600 leading-7 list-decimal pl-5'>
+                <li>Păstrează calmul și încearcă să liniștești animalul.</li>
+                <li>Sună la numărul de urgență pentru a anunța sosirea.</li>
+                <li>Nu administra medicamente fără recomandarea medicului.</li>
+                <li>Transportă animalul în siguranță, folosind o pătură sau o cușcă de transport dacă este necesar.</li>
+            </ol>
+        </div>
+
+    </div>
+</section>
         </>
     );
 }
