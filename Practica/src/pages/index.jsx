@@ -1,96 +1,110 @@
 import bgImage from '../../img/img-index/img-index-bg-1.svg'
+import pers1 from '../../img/img-index/recenzii-clienti/pers1.jpg'
+import pers2 from '../../img/img-index/recenzii-clienti/pers2.jpg'
+import pers3 from '../../img/img-index/recenzii-clienti/pers3.jpg'
+import pers4 from '../../img/img-index/recenzii-clienti/pers4.jpg'
+import pers5 from '../../img/img-index/recenzii-clienti/pers5.jpg'
+import pers6 from '../../img/img-index/recenzii-clienti/pers6.jpg'
+import pers7 from '../../img/img-index/recenzii-clienti/pers7.jpg'
+import pers8 from '../../img/img-index/recenzii-clienti/pers8.jpg'
+import pers9 from '../../img/img-index/recenzii-clienti/pers9.jpg'
+import pers10 from '../../img/img-index/recenzii-clienti/pers10.jpg'
+import pers11 from '../../img/img-index/recenzii-clienti/pers11.jpg'
+import pers12 from '../../img/img-index/recenzii-clienti/pers12.jpg'
+
 import index_sectiunea_ServiciiPrincipal from '../../img/img-index/Img_sectiunea_servicii_principale.svg'
 import index_sectiunea_DeCePet from '../../img/img-index/Img-index-sectiunea-DeCePet.svg'
 import { AncoraColorata, AncoraSur } from "../utilitati/butoane.jsx";
 
 function Index() {
     let a = '/Practica/img/img-index/img-index-bg-1.svg'
-const items = [
-    {
-        id: 1,
-        img: '',
-        nume: 'Popescu',
-        prenume: 'Ana',
-        recenzie: 'Personal foarte amabil și profesionist. Cățelul meu a fost tratat cu multă grijă și atenție.',
-    },
-    {
-        id: 2,
-        img: '',
-        nume: 'Ionescu',
-        prenume: 'Mihai',
-        recenzie: 'Servicii excelente și explicații clare. Recomand cu încredere această clinică veterinară.',
-    },
-    {
-        id: 3,
-        img: '',
-        nume: 'Rusu',
-        prenume: 'Elena',
-        recenzie: 'Am fost impresionată de răbdarea și dedicarea echipei. Pisica mea s-a simțit în siguranță.',
-    },
-    {
-        id: 4,
-        img: '',
-        nume: 'Munteanu',
-        prenume: 'Andrei',
-        recenzie: 'Programarea a fost rapidă, iar consultația foarte detaliată. O experiență plăcută.',
-    },
-    {
-        id: 5,
-        img: '',
-        nume: 'Ceban',
-        prenume: 'Maria',
-        recenzie: 'Oameni extraordinari! Au avut grijă de cățelul nostru ca și cum ar fi fost al lor.',
-    },
-    {
-        id: 6,
-        img: '',
-        nume: 'Dumitru',
-        prenume: 'Cristian',
-        recenzie: 'Profesionalism, curățenie și multă empatie. Cu siguranță vom reveni.',
-    },
-    {
-        id: 7,
-        img: '',
-        nume: 'Balan',
-        prenume: 'Irina',
-        recenzie: 'Medicii au răspuns la toate întrebările mele și mi-au oferit sfaturi utile.',
-    },
-    {
-        id: 8,
-        img: '',
-        nume: 'Luca',
-        prenume: 'Victor',
-        recenzie: 'Foarte mulțumit de serviciile primite. Atmosferă plăcută și personal dedicat.',
-    },
-    {
-        id: 9,
-        img: '',
-        nume: 'Sandu',
-        prenume: 'Gabriela',
-        recenzie: 'Pisica mea a primit îngrijirea de care avea nevoie. Mulțumim întregii echipe!',
-    },
-    {
-        id: 10,
-        img: '',
-        nume: 'Rotaru',
-        prenume: 'Daniel',
-        recenzie: 'Consultația a fost punctuală și foarte bine explicată. Recomand cu drag.',
-    },
-    {
-        id: 11,
-        img: '',
-        nume: 'Mocanu',
-        prenume: 'Alina',
-        recenzie: 'Un loc unde animalele sunt tratate cu respect și afecțiune. Suntem foarte mulțumiți.',
-    },
-    {
-        id: 12,
-        img: '',
-        nume: 'Nistor',
-        prenume: 'George',
-        recenzie: 'Servicii de calitate și personal prietenos. Cea mai bună alegere pentru animăluțul nostru.',
-    },
-];
+    const items = [
+        {
+            id: 1,
+            img: pers1,
+            nume: 'Popescu',
+            prenume: 'Mihai',
+
+            recenzie: 'Personal foarte amabil și profesionist. Cățelul meu a fost tratat cu multă grijă și atenție.',
+        },
+        {
+            id: 2,
+            img: pers2,
+            nume: 'Ionescu',
+            prenume: 'Ana',
+            recenzie: 'Servicii excelente și explicații clare. Recomand cu încredere această clinică veterinară.',
+        },
+        {
+            id: 3,
+            img: pers3,
+            nume: 'Rusu',
+            prenume: 'Elena',
+            recenzie: 'Am fost impresionată de răbdarea și dedicarea echipei. Pisica mea s-a simțit în siguranță.',
+        },
+        {
+            id: 4,
+            img: pers4,
+            nume: 'Munteanu',
+            prenume: 'Andrei',
+            recenzie: 'Programarea a fost rapidă, iar consultația foarte detaliată. O experiență plăcută.',
+        },
+        {
+            id: 5,
+            img: pers5,
+            nume: 'Ceban',
+            prenume: 'Maria',
+            recenzie: 'Oameni extraordinari! Au avut grijă de cățelul nostru ca și cum ar fi fost al lor.',
+        },
+        {
+            id: 6,
+            img: pers6,
+            nume: 'Dumitru',
+            prenume: 'Cristian',
+            recenzie: 'Profesionalism, curățenie și multă empatie. Cu siguranță vom reveni.',
+        },
+        {
+            id: 7,
+            img: pers7,
+            nume: 'Balan',
+            prenume: 'Irina',
+            recenzie: 'Medicii au răspuns la toate întrebările mele și mi-au oferit sfaturi utile.',
+        },
+        {
+            id: 8,
+            img: pers8,
+            nume: 'Luca',
+            prenume: 'Victor',
+            recenzie: 'Foarte mulțumit de serviciile primite. Atmosferă plăcută și personal dedicat.',
+        },
+        {
+            id: 9,
+            img: pers9,
+            nume: 'Sandu',
+            prenume: 'Gabriela',
+            recenzie: 'Pisica mea a primit îngrijirea de care avea nevoie. Mulțumim întregii echipe!',
+        },
+        {
+            id: 10,
+            img: pers10,
+            nume: 'Rotaru',
+            prenume: 'Inga',
+            recenzie: 'Consultația a fost punctuală și foarte bine explicată. Recomand cu drag.',
+        },
+        {
+            id: 11,
+            img: pers11,
+            nume: 'Mocanu',
+            prenume: 'Alina',
+            recenzie: 'Un loc unde animalele sunt tratate cu respect și afecțiune. Suntem foarte mulțumiți.',
+        },
+        {
+            id: 12,
+            img: pers12,
+            nume: 'Nistor',
+            prenume: 'George',
+            recenzie: 'Servicii de calitate și personal prietenos. Cea mai bună alegere pentru animăluțul nostru.',
+        },
+    ];
     return (
         <>
             <section
@@ -180,23 +194,23 @@ const items = [
                     }
                 `}
             </style>
-            <section className='w-full min-h-[40dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'>
+            <section className='w-full min-h-[60dvh]  bg-white flex justify-center items-center px-4 py-[200px] bg-cover bg-no-repeat bg-center'>
 
-                <div className="overflow-hidden  my-auto w-[98%] sm:w-[90%] lg:w-[80%] xl:w-[70%] border-4 border-red-500">
-                    <div className="flex items-center gap-4 animate-scroll">
+                <div className="overflow-hidden  my-auto w-[98%] sm:w-[90%] lg:w-[90%]  rounded-[40px] border-[5px] py-2 border-black">
+                    <div className="flex items-center gap-[35px] animate-scroll">
                         {[...items, ...items].map((item, index) => (
                             <div
                                 key={index}
 
-                                className="flex-shrink-0 w-[240px]    sm:w-[280px]    md:w-[320px]    lg:w-[340px]    h-[260px]    sm:h-[300px]    md:h-[340px]    bg-blue-600    text-white    rounded-3xl    shadow-xl">
-                                <div className="w-full h-full flex flex-col items-center justify-center py-6 px-5">
-                                    
-                                    <div className="w-[300px] h-[150px] rounded-[20px] overflow-hidden border-2 border-white mb-4 bg-white">
+                                className="flex-shrink-0 w-[240px]    sm:w-[280px]    md:w-[320px]    lg:w-[340px]    h-[300px]    sm:h-[350px]    md:h-[400px]    bg-gradient-to-b from-[#4CAF50] to-[#2196F3]    text-white    rounded-3xl    shadow-2xl shadow-blue-400">
+                                <div className="w-full h-full flex flex-col items-center justify-center pt-2 pb-4 px-5">
+
+                                    <div className="w-[80%] h-[300px] rounded-[20px] overflow-hidden border-2 border-white mb-4 bg-white">
                                         {item.img ? (
                                             <img
                                                 src={item.img}
                                                 alt={`${item.nume} ${item.prenume}`}
-                                                className="w-full h-full object-cover"
+                                                className="w-full h-full object-cover object-center"
                                             />
                                         ) : (
                                             <div className="w-full h-full flex items-center justify-center text-blue-600 text-sm">
@@ -205,7 +219,6 @@ const items = [
                                         )}
                                     </div>
 
-                                    {/* Nume */}
                                     <h3 className="text-xl font-bold text-center">
                                         {item.nume || "Nume"}
                                     </h3>
@@ -214,9 +227,8 @@ const items = [
                                         {item.prenume || "Prenume"}
                                     </p>
 
-                                    {/* Recenzie */}
                                     <p className="text-sm text-center leading-6 font-normal">
-                                        {item.recenzie }
+                                        {item.recenzie}
                                     </p>
                                 </div>
                             </div>
@@ -224,6 +236,7 @@ const items = [
                     </div>
                 </div>
             </section >
+            
 
         </>
     );
