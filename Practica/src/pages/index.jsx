@@ -113,7 +113,7 @@ function Index() {
 
                 <div className='h-full w-full flex justify-center items-center md:w-[50%] md:mr-auto border  border-black '>
                     <div className='border border-red-400 w-[60%] md:w-[100%] text-center flex items-center justify-center flex-col gap-8 '>
-                        <h1 className='text-[30px] md:text-[36px] md:bg-transparent bg-gray-100 md:text-[40px] lg:text-[48px] px-[10px] text-black '>TITLE</h1>
+                        <h1 className='md:bg-transparent bg-gray-100 text-[30px] md:text-[40px] lg:text-[48px] px-[10px] text-black '>TITLE</h1>
                         <p className='text-[16px] text-black md:bg-transparent bg-gray-100 px-[10px]'><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique corporis distinctio eaque doloribus tempora libero excepturi enim veritatis est in provident hic aspernatur,</span><span className='md:flex hidden'> dolores esse dolorem amet rem, expedita neque cumque ut culpa! Quis voluptas, laboriosam doloribus reprehenderit dolores necessitatibus similique ut, consequuntur vel optio nisi, consequatur ea obcaecati!</span></p>
 
                         <div className=' flex w-full justify-center items-center gap-3'>
@@ -236,89 +236,89 @@ function Index() {
                     </div>
                 </div>
             </section >
-            
-                        <section className='w-full min-h-[90dvh] bg-white flex justify-center items-center px-4 py-[200px]'>
-    <div className='w-full max-w-6xl bg-red-50 border-2 border-red-200 rounded-[40px] p-8 md:p-14 shadow-xl'>
 
-        <div className='text-center mb-12'>
-            <span className='inline-block bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-full mb-4'>
-                 Serviciu de Urgență Veterinară
-            </span>
+            <section className='w-full min-h-[90dvh] bg-white flex justify-center items-center px-4 pb-[100px]'>
+                <div className='w-full max-w-6xl bg-red-50 border-2 border-red-200 rounded-[40px] p-8 md:p-14 shadow-xl'>
 
-            <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
-                Ai o urgență?
-            </h2>
+                    <div className='text-center mb-12'>
+                        <span className='inline-block bg-red-100 text-red-600 font-semibold px-4 py-2 rounded-full mb-4'>
+                            Serviciu de Urgență Veterinară
+                        </span>
 
-            <p className='text-gray-600 text-lg max-w-3xl mx-auto leading-8'>
-                Înțelegem că situațiile neprevăzute pot apărea în orice moment.
-                Echipa noastră este pregătită să ofere asistență medicală rapidă
-                și profesionistă pentru animalele care necesită îngrijiri urgente.
-            </p>
-        </div>
+                        <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
+                            Ai o urgență?
+                        </h2>
 
-        <div className='grid md:grid-cols-3 gap-6'>
+                        <p className='text-gray-600 text-lg max-w-3xl mx-auto leading-8'>
+                            Înțelegem că situațiile neprevăzute pot apărea în orice moment.
+                            Echipa noastră este pregătită să ofere asistență medicală rapidă
+                            și profesionistă pentru animalele care necesită îngrijiri urgente.
+                        </p>
+                    </div>
 
-            <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'></div>
+                    <div className='grid md:grid-cols-3 gap-6'>
 
-                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
-                    Program de urgență
-                </h3>
+                        <div className='bg-white rounded-3xl p-8 shadow-md'>
+                            <div className='text-4xl mb-4'></div>
 
-                <p className='text-gray-600 leading-7'>
-                    Luni – Duminică
-                    <br />
-                    <span className='font-semibold text-red-600'>
-                        24/7
-                    </span>
-                    <br />
-                    Intervenim pentru cazurile care necesită asistență imediată.
-                </p>
-            </div>
+                            <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                                Program de urgență
+                            </h3>
 
-            <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'></div>
+                            <p className='text-gray-600 leading-7'>
+                                Luni – Duminică
+                                <br />
+                                <span className='font-semibold text-red-600'>
+                                    24/7
+                                </span>
+                                <br />
+                                Intervenim pentru cazurile care necesită asistență imediată.
+                            </p>
+                        </div>
 
-                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
-                    Contact rapid
-                </h3>
+                        <div className='bg-white rounded-3xl p-8 shadow-md'>
+                            <div className='text-4xl mb-4'></div>
 
-                <p className='text-gray-600 leading-7 mb-6'>
-                    Sună imediat înainte de a ajunge la clinică pentru ca
-                    echipa noastră să se pregătească pentru primirea pacientului.
-                </p>
+                            <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                                Contact rapid
+                            </h3>
 
-                <a
-                    href="tel:+37360000000"
-                    className='inline-flex items-center justify-center bg-red-600 hover:bg-red-700 transition text-white font-semibold px-6 py-3 rounded-xl'
-                >
-                    +373 60 000 000
-                </a>
-            </div>
+                            <p className='text-gray-600 leading-7 mb-6'>
+                                Sună imediat înainte de a ajunge la clinică pentru ca
+                                echipa noastră să se pregătească pentru primirea pacientului.
+                            </p>
 
-            <div className='bg-white rounded-3xl p-8 shadow-md'>
-                <div className='text-4xl mb-4'></div>
+                            <a
+                                href="tel:+37360000000"
+                                className='inline-flex items-center justify-center bg-red-600 hover:bg-red-700 transition text-white font-semibold px-6 py-3 rounded-xl'
+                            >
+                                +373 60 000 000
+                            </a>
+                        </div>
 
-                <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
-                    Când să ne contactezi
-                </h3>
+                        <div className='bg-white rounded-3xl p-8 shadow-md'>
+                            <div className='text-4xl mb-4'></div>
 
-                <ul className='text-gray-600 leading-7 space-y-2 list-disc pl-5'>
-                    <li>Dificultăți de respirație</li>
-                    <li>Accidente sau traumatisme</li>
-                    <li>Convulsii</li>
-                    <li>Intoxicații</li>
-                    <li>Sângerări abundente</li>
-                    <li>Pierderea cunoștinței</li>
-                </ul>
-            </div>
+                            <h3 className='text-2xl font-semibold mb-4 text-gray-900'>
+                                Când să ne contactezi
+                            </h3>
 
-        </div>
+                            <ul className='text-gray-600 leading-7 space-y-2 list-disc pl-5'>
+                                <li>Dificultăți de respirație</li>
+                                <li>Accidente sau traumatisme</li>
+                                <li>Convulsii</li>
+                                <li>Intoxicații</li>
+                                <li>Sângerări abundente</li>
+                                <li>Pierderea cunoștinței</li>
+                            </ul>
+                        </div>
+
+                    </div>
 
 
 
-    </div>
-</section>
+                </div>
+            </section>
         </>
     );
 }

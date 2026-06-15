@@ -8,7 +8,8 @@ import Contact from './pages/contact'
 import Service from './pages/service'
 import Team from './pages/team'
 import Tips from './pages/tips'
-
+import Conecteazate from './pages/conecteazate'
+import Inregistreazate from './pages/inregistreazate'
 function App() {
   return (
     <BrowserRouter>
@@ -21,9 +22,11 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/team" element={<Team />} />
         <Route path="/tips" element={<Tips />} />
+        <Route path="/conecteazate" element={<Conecteazate />} />
+        <Route path="/inregistreazate" element={<Inregistreazate />} />
       </Routes>
 
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }

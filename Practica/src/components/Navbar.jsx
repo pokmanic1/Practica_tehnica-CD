@@ -21,10 +21,10 @@ function Navbar() {
     }, [])
 
     return (
-        <nav className='relative  min-w-[375px] w-full pr-[20px] md:px-[40px] sticky top-0 left-0 bg-white border-b-2 border-gray-300'>
+        <nav className='relative  min-w-[375px] w-full pr-[20px] md:px-[40px] sticky z-50 top-0 left-0 bg-white border-b-2 border-gray-300'>
             <div className='w-full h-[60px] flex justify-between items-center text-black'>
-
-                <Link to="/">
+                
+                <Link to="/" className='w-[20%]'>
                     <img
                         src="../../img/Logo.svg"
                         className='w-[70px] mt-[10px]'
@@ -32,7 +32,7 @@ function Navbar() {
                     />
                 </Link>
 
-                <div className='hidden md:flex items-center gap-[40px]'>
+                <div className='hidden md:flex items-center   md:text-[14px] lg:text-[16px]  gap-[20px]  lg:gap-[30px]  w-[80%] flex justify-center items-center'>
                     <Link to="/service">Service</Link>
                     <Link to="/booking">Booking</Link>
                     <Link to="/team">Team</Link>
@@ -40,6 +40,12 @@ function Navbar() {
                     <Link to="/contact">Contact</Link>
                 </div>
 
+                <div className='hidden md:flex items-center gap-[5px]  md:gap-[15px] lg:gap-[30px]  md:text-[14px] lg:text-[16px]  w-[20%] mr-1'>
+                    
+                <Link to="/conecteazate" className=''>Conecteazate</Link>
+                <Link to="/inregistreazate" className=''>Inregistreazate</Link>
+
+                </div>
                 <button id="burgerBtn" className="md:hidden flex flex-col gap-1">
                     <span className="w-6 h-[1px] bg-black"></span>
                     <span className="w-6 h-[1px] bg-black"></span>
@@ -53,6 +59,8 @@ function Navbar() {
                 <Link to="/team" className='border-b border-gray-300'>Team</Link>
                 <Link to="/tips" className='border-b border-gray-300'>Tips</Link>
                 <Link to="/contact" className='border-b border-gray-300'>Contact</Link>
+                <Link to="/conecteazate" className='border-b border-gray-300'>Conecteazate</Link>
+                <Link to="/inregistreazate" className='border-b border-gray-300'>inregistreazate</Link>
             </div>
         </nav>
     )
