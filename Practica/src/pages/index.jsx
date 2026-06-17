@@ -112,7 +112,7 @@ function Index() {
                 style={{ backgroundImage: `url(${bgImage})` }}>
 
                 <div className='h-full w-full flex justify-center items-center md:w-[50%] md:mr-auto border  border-black '>
-                    <div className='border border-red-400 w-[60%] md:w-[100%] text-center flex items-center justify-center flex-col gap-8 '>
+                    <div className='border border-red-400 w-[60%] md:w-[100%] max-w-[700px]  text-center flex items-center justify-center flex-col gap-8 '>
                         <h1 className='md:bg-transparent bg-gray-100 text-[30px] md:text-[40px] lg:text-[48px] px-[10px] text-black '>TITLE</h1>
                         <p className='text-[16px] text-black md:bg-transparent bg-gray-100 px-[10px]'><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique corporis distinctio eaque doloribus tempora libero excepturi enim veritatis est in provident hic aspernatur,</span><span className='md:flex hidden'> dolores esse dolorem amet rem, expedita neque cumque ut culpa! Quis voluptas, laboriosam doloribus reprehenderit dolores necessitatibus similique ut, consequuntur vel optio nisi, consequatur ea obcaecati!</span></p>
 
