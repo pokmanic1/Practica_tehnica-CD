@@ -111,8 +111,8 @@ function Index() {
                 className="min-w-[375px] min-h-[95dvh] h-[95dvh] w-full flex items-center justify-center text-white bg-cover bg-right   bg-no-repeat"
                 style={{ backgroundImage: `url(${bgImage})` }}>
 
-                <div className='h-full w-full flex justify-center items-center md:w-[50%] md:mr-auto border  border-black '>
-                    <div className='border border-red-400 w-[60%] md:w-[100%] max-w-[700px]  text-center flex items-center justify-center flex-col gap-8 '>
+                <div className='h-full w-full flex justify-center items-center md:w-[50%] md:mr-auto  '>
+                    <div className='  w-[60%] md:w-[100%] max-w-[700px]  text-center flex items-center justify-center flex-col gap-8 '>
                         <h1 className='md:bg-transparent bg-gray-100 text-[30px] md:text-[40px] lg:text-[48px] px-[10px] text-black '>TITLE</h1>
                         <p className='text-[16px] text-black md:bg-transparent bg-gray-100 px-[10px]'><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique corporis distinctio eaque doloribus tempora libero excepturi enim veritatis est in provident hic aspernatur,</span><span className='md:flex hidden'> dolores esse dolorem amet rem, expedita neque cumque ut culpa! Quis voluptas, laboriosam doloribus reprehenderit dolores necessitatibus similique ut, consequuntur vel optio nisi, consequatur ea obcaecati!</span></p>
 
@@ -162,12 +162,107 @@ function Index() {
 
             <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'
                 style={{ backgroundImage: `url("${index_sectiunea_ServiciiPrincipal}")` }}>
-                <div className='w-[90%] md:w-[95%] lg:w-[80%]'>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-[20px]'>
-                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
-                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
-                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
-                        <div className='min-w-[100px] max-w-[400px] h-[200px] sm:h-[260px] md:h-[300px] bg-white border border-black rounded-[20px] flex flex-col justify-center items-center '></div>
+                <div className='w-[98%] md:w-[95%] lg:w-[80%]'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-[10px] sm:gap-[20px]'>
+
+
+
+                        <div className='min-w-[100px] max-w-[400px]  bg-white rounded-[20px] border border-gray-200 shadow-lg  p-4 md:p-5 lg:p-6 relative overflow-hidden flex flex-col'>
+                            
+
+                            <span className='bg-[#2196F3]/10 text-[#2196F3] text-xs font-semibold px-3 py-1 rounded-full w-fit mb-4'>
+                                Serviciu principal
+                            </span>
+
+                            <div className='w-[60px] h-[4px] bg-[#2196F3] rounded-full mb-4'></div>
+
+                            <h3 className='text-[22px] font-semibold text-gray-900 mb-2'>
+                                Consultații
+                            </h3>
+
+                            <p className='text-gray-600 text-sm leading-6 mb-4 hidden sm:flex'>
+                                Evaluări complete și recomandări personalizate pentru menținerea sănătății animalului.
+                            </p>
+
+                            <ul className='space-y-2 text-sm text-gray-700 mt-auto'>
+                                <li>• Examinare generală</li>
+                                <li>• Stabilirea diagnosticului</li>
+                                <li>• Plan de tratament</li>
+                            </ul>
+                        </div>
+
+                        <div className='min-w-[100px] max-w-[400px]  bg-white rounded-[20px] border border-gray-200 shadow-lg  p-4 md:p-5 lg:p-6 relative overflow-hidden flex flex-col'>
+                           
+                             <span className='bg-[#2196F3]/10 text-[#2196F3] text-xs font-semibold px-3 py-1 rounded-full w-fit mb-4'>
+                                Serviciu principal
+                            </span>
+
+                            <div className='w-[60px] h-[4px] bg-[#2196F3] rounded-full mb-4'></div>
+
+                            <h3 className='text-[22px] font-semibold text-gray-900 mb-2'>
+                                Vaccinare
+                            </h3>
+
+                            <p className='text-gray-600 text-sm leading-6 mb-4 hidden sm:flex'>
+                                Protecție eficientă împotriva bolilor și monitorizarea dezvoltării sănătoase.
+                            </p>
+
+                            <ul className='space-y-2 text-sm text-gray-700 mt-auto'>
+                                <li>• Vaccinuri obligatorii</li>
+                                <li>• Carnet de sănătate</li>
+                                <li>• Program personalizat</li>
+                            </ul>
+                        </div>
+
+                        <div className='min-w-[100px] max-w-[400px]  bg-white rounded-[20px] border border-gray-200 shadow-lg  p-4 md:p-5 lg:p-6 relative overflow-hidden flex flex-col'>
+                           
+
+                            <span className='bg-[#2196F3]/10 text-[#2196F3] text-xs font-semibold px-3 py-1 rounded-full w-fit mb-4'>
+                                Serviciu principal
+                            </span>
+
+                            <div className='w-[60px] h-[4px] bg-[#2196F3] rounded-full mb-4'></div>
+
+                            <h3 className='text-[22px] font-semibold text-gray-900 mb-2'>
+                                Toaletare
+                            </h3>
+
+                            <p className='text-gray-600 text-sm leading-6 mb-4 hidden sm:flex'>
+                                Îngrijire completă pentru confortul și aspectul impecabil al animalului.
+                            </p>
+
+                            <ul className='space-y-2 text-sm text-gray-700 mt-auto'>
+                                <li>• Tuns și periaj</li>
+                                <li>• Curățare urechi</li>
+                                <li>• Îngrijirea ghearelor</li>
+                            </ul>
+                        </div>
+
+                        <div className='min-w-[100px] max-w-[400px]  bg-white rounded-[20px] border border-gray-200 shadow-lg  p-4 md:p-5 lg:p-6 relative overflow-hidden flex flex-col'>
+                            
+                            <span className='bg-[#2196F3]/10 text-[#2196F3] text-xs font-semibold px-3 py-1 rounded-full w-fit mb-4'>
+                                Serviciu principal
+                            </span>
+
+                            <div className='w-[60px] h-[4px] bg-[#2196F3] rounded-full mb-4'></div>
+
+                            <h3 className='text-[22px] font-semibold text-gray-900 mb-2'>
+                                Urgențe
+                            </h3>
+
+                            <p className='text-gray-600 text-sm leading-6 mb-4 hidden sm:flex'>
+                                Intervenții rapide pentru situațiile care necesită asistență imediată.
+                            </p>
+
+                            <ul className='space-y-2 text-sm text-gray-700 mt-auto'>
+                                <li>• Asistență prioritară</li>
+                                <li>• Diagnostic rapid</li>
+                                <li>• Tratament de urgență</li>
+                            </ul>
+                        </div>
+
+
+
                     </div>
                 </div>
             </section>

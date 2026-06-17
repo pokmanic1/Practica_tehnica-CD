@@ -57,56 +57,56 @@ const faqItems = [
 const animalMatch = [
   {
     animal: 'Ciobănesc German',
-    
+
     question: 'Îți place liniștea, rutina și compania unui prieten loial?',
     answer:
       'Ciobănescul German este inteligent, protector și extrem de devotat familiei sale. Este potrivit pentru persoanele responsabile care își doresc un companion activ și de încredere.',
   },
   {
     animal: 'Labrador Retriever',
-    
+
     question: 'Ai un stil de viață activ și îți place să petreci mult timp în aer liber?',
     answer:
       'Labradorul adoră plimbările lungi, joaca și activitățile în natură. Este sociabil, prietenos și se înțelege excelent cu oamenii și alte animale.',
   },
   {
     animal: 'Pisică Europeană',
-    
+
     question: 'Preferi un animal independent, dar care oferă afecțiune atunci când dorește?',
     answer:
       'Pisica este alegerea ideală pentru persoanele care apreciază liniștea și independența. Se adaptează ușor vieții la apartament și necesită mai puțină atenție decât un câine.',
   },
   {
     animal: 'Hamster',
-    
+
     question: 'Locuiești într-un spațiu mic și îți dorești un animal ușor de îngrijit?',
     answer:
       'Hamsterii ocupă puțin spațiu și sunt relativ ușor de întreținut. Sunt perfecți pentru persoanele care își doresc primul animal de companie.',
   },
   {
     animal: 'Papagal Nimfă',
-    
+
     question: 'Îți place să interacționezi zilnic cu animalul tău și să îl înveți lucruri noi?',
     answer:
       'Papagalii nimfă sunt inteligenți, comunicativi și foarte sociabili. Pot dezvolta o relație apropiată cu stăpânii lor și iubesc atenția.',
   },
   {
     animal: 'Golden Retriever',
-    
+
     question: 'Ai o familie cu copii și cauți un companion blând și răbdător?',
     answer:
       'Golden Retrieverul este una dintre cele mai apreciate rase pentru familii. Este afectuos, calm și foarte prietenos cu cei mici.',
   },
   {
     animal: 'Iepure Pitic',
-    
+
     question: 'Îți dorești un animal liniștit, adorabil și potrivit pentru apartament?',
     answer:
       'Iepurii pitici sunt curați, afectuoși și pot deveni foarte apropiați de stăpânii lor dacă primesc atenție și îngrijire corespunzătoare.',
   },
   {
     animal: 'Porcușor de Guineea',
-    
+
     question: 'Cauți un animal sociabil, blând și potrivit pentru întreaga familie?',
     answer:
       'Porcușorii de Guineea sunt prietenoși, adoră interacțiunea și se adaptează bine în familiile cu copii. Sunt companioni plăcuți și ușor de îndrăgit.',
