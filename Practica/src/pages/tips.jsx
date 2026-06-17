@@ -121,10 +121,10 @@ function Tips() {
       >
         <div className='flex items-center justify-center w-[50%]'>
           <div className="w-full max-w-2xl md:mr-auto flex flex-col gap-6 text-center ">
-            <h1 className="text-4xl md:text-5xl font-semibold text-white drop-shadow-sm leading-tight">
+            <h1 className="text-4xl font-poppins md:text-5xl font-semibold text-white drop-shadow-sm leading-tight">
               Sfaturi <br className="hidden md:block" />pentru animalul tău
             </h1>
-            <p className="text-white/90 text-center md:text-lg  max-w-md mx-auto">
+            <p className="text-white/90 text-center md:text-lg   max-w-md mx-auto">
               Îngrijire profesională, informații de încredere și cele mai bune
               practici pentru fiecare etapă a vieții animalului tău.
             </p>
@@ -137,7 +137,7 @@ function Tips() {
       </section>
 
       <section className="w-full min-w-[375px] bg-white px-4 py-14">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-8">
+        <h2 className="text-2xl font-poppins font-semibold text-center text-gray-800 mb-8">
           Articole pentru animaluțe
         </h2>
 
@@ -173,7 +173,7 @@ function Tips() {
       </section>
 
       <section className="w-full min-w-[375px] bg-blue-50 px-4 py-14">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-8">
+        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-8 font-poppins">
           Întrebări frecvente
         </h2>
 
@@ -197,7 +197,7 @@ function Tips() {
           <div className="text-center mb-12">
 
 
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0D47A1] mt-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0D47A1] mt-4 font-poppins">
               Ce animal ți se potrivește?
             </h2>
 
