@@ -111,17 +111,17 @@ function Contact() {
                                     className="w-full px-5 py-3 rounded-[12px] border border-stone-400 bg-transparent text-gray-700 outline-none transition-all focus:border-stone-600 focus:ring-1 focus:ring-stone-600" />
                             </div>
                             <div className="w-full  px-4">
-                                <label htmlFor="parola" className="block text-sm font-medium text-gray-400 pl-2 mb-1">
+                                <label htmlFor="parola" className="block text-sm  font-medium text-gray-400 pl-2 mb-1">
                                     Recenzia
                                 </label>
 
-                                <input
+                                <textarea
                                     type="text"
                                     id="recenzia"
                                     value={recenzieContact}
                                     onChange={onChangeRecenzieContact}
-                                    placeholder="Introduceți parola..."
-                                    className="w-full px-5 py-3 rounded-[12px] border border-stone-400 bg-transparent text-gray-700 outline-none transition-all focus:border-stone-600 focus:ring-1 focus:ring-stone-600" />
+                                    placeholder="Transmite un mesaj..."
+                                    className="w-full px-5 py-3 min-h-[100px] rounded-[12px] border border-stone-400 bg-transparent text-gray-700 outline-none transition-all focus:border-stone-600 focus:ring-1 focus:ring-stone-600" />
                             </div>
                             <button
                                 id="loginBtn"
