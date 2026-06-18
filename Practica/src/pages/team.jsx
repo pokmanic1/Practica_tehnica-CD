@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const echipa = [
     {
         id: 1,
@@ -74,6 +76,18 @@ const echipa = [
 ]
 
 function Team() {
+    const [categorieSelectata, setCategorieSelectata] = useState('Toți membrii')
+
+
+    const membriFiltrati =
+        categorieSelectata === 'Toți membrii'
+            ? echipa
+            : echipa.filter(membru => membru.categorie === categorieSelectata)
+
+    function categorie(cat) {
+        setCategorieSelectata(cat)
+    }
+
     return (
         <>
             <section className="min-w-[375px] w-full min-h-[40dvh] flex items-center justify-center bg-gradient-to-r from-[#4CAF50] to-[#2196F3]">
@@ -93,16 +107,16 @@ function Team() {
                     <div className="flex flex-wrap justify-center gap-3 mb-12">
                         {['Toți membrii', 'Medicina internă', 'Chirurgie', 'Stomatologie', 'Urgențe', 'Animale exotice'].map(cat => (
                             <button
+                                onClick={() => categorie(cat)}
                                 key={cat}
-                                className="px-5 py-2 rounded-full text-[14px] font-medium border border-gray-300 bg-white text-gray-600 hover:border-[#4CAF50] hover:text-[#4CAF50] transition-all duration-200"
-                            >
+                                className="px-5 py-2 rounded-full text-[14px] font-medium border border-gray-300 bg-white text-gray-600 hover:border-[#4CAF50] hover:text-[#4CAF50] transition-all duration-200">
                                 {cat}
                             </button>
                         ))}
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {echipa.map(membru => (
+                        {membriFiltrati.map(membru => (
                             <div
                                 key={membru.id}
                                 className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col overflow-hidden"
@@ -142,25 +156,7 @@ function Team() {
                 </div>
             </section>
 
-            <section className="min-w-[375px] w-full bg-gray-50 border-t border-gray-200 py-14 px-6">
-                <div className="max-w-[900px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    {[
-                        { numar: '8+', eticheta: 'Medici specialiști' },
-                        { numar: '15+', eticheta: 'Ani de experiență' },
-                        { numar: '5000+', eticheta: 'Pacienți tratați' },
-                        { numar: '10+', eticheta: 'Servicii oferite' },
-                    ].map(stat => (
-                        <div key={stat.eticheta}>
-                            <p className="text-[36px] md:text-[44px] font-bold text-[#4CAF50]">
-                                {stat.numar}
-                            </p>
-                            <p className="text-[14px] text-gray-500 mt-1">
-                                {stat.eticheta}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+
         </>
     )
 }
