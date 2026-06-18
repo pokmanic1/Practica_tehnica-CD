@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import bgServicii from '../../img/img-pg-servicii/bgServicii.svg'
 
 const servicii = [
@@ -14,6 +15,16 @@ const servicii = [
 ]
 
 function Service() {
+    const [categorieSelectata ,setCategorieSelectata]=useState('Toate serviciile')
+    function categorie(cat){
+        setCategorieSelectata(cat);
+    }
+
+    const tipsul =
+        categorieSelectata=== 'Toate serviciile'
+        ?servicii
+        :servicii.filter(a=>a.categorie===categorieSelectata)
+
     return (
         <>
             <section
@@ -37,6 +48,7 @@ function Service() {
                         {['Toate serviciile', 'Preventive', 'Chirurgicale', 'Stomatologice', 'Grooming'].map(cat => (
                             <button
                                 key={cat}
+                                onClick={()=>categorie(cat)}
                                 className="px-5 py-2 rounded-full text-[14px] font-medium border border-gray-300 bg-white text-gray-600 hover:border-[#4CAF50] hover:text-[#4CAF50] transition-all duration-200"
                             >
                                 {cat}
@@ -45,7 +57,7 @@ function Service() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {servicii.map(serviciu => (
+                        {tipsul.map(serviciu => (
                             <div
                                 key={serviciu.id}
                                 className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col overflow-hidden"
@@ -68,23 +80,11 @@ function Service() {
                                         <span className="text-[15px] font-bold text-[#4CAF50]">
                                             {serviciu.pret}
                                         </span>
-                                        <button className="text-[12px] text-[#2196F3] hover:underline flex items-center gap-1">
-                                            Detalii ▾
-                                        </button>
+                                        
                                     </div>
                                 </div>
 
-                                <div className="px-5 pb-5 border-t border-gray-100 pt-4">
-                                    <p className="text-[13px] text-gray-600 leading-6">
-                                        {serviciu.detalii}
-                                    </p>
-                                    <a
-                                        href="/booking"
-                                        className="mt-4 inline-block w-full text-center px-4 py-2 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] text-white text-[13px] rounded-full hover:opacity-90 transition-opacity"
-                                    >
-                                        Programează-te
-                                    </a>
-                                </div>
+                                
                             </div>
                         ))}
                     </div>

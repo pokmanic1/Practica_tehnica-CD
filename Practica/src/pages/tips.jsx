@@ -2,7 +2,6 @@ import { AncoraColorata, AncoraSur } from "../utilitati/butoane.jsx";
 
 import bg1 from '../../img/img-pg-tips/bg-pentru-sfaturi.svg'
 
-// Lasă căile goale — le completezi tu
 import imgCaini from '../../img/img-pg-tips/imgCaini.svg'
 import imgPisici from '../../img/img-pg-tips/imgPisici.svg'
 import imgRozatoare from '../../img/img-pg-tips/imgRazatoare.svg'

@@ -12,11 +12,17 @@ function Conecteazate() {
         setPassword(e.target.value);
 
     }
-    function onSubmit() {
-        setEmail(" ");
-        setPassword("");
-        console.log(email1);
-        console.log(password1)
+    async function onSubmit() {
+        const res = await fetch('http://localhost:3001/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email1, password: password1 })
+        });
+        const data = await res.json();
+        if (data.success) {
+            localStorage.setItem('token', data.token);
+            alert('Bine ai venit, ' + data.nume);
+        } else alert('Eroare: ' + data.error);
     }
 
     const btn = document.getElementById('loginBtn')
@@ -56,7 +62,7 @@ function Conecteazate() {
                     </div>
                     <button id="registerBtn" onClick={onSubmit}
                         className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
-                                ${  email !== "" && password !== ""
+                                ${email !== "" && password !== ""
                                 ? "bg-black text-white"
                                 : "bg-gray-200 text-black"
                             }`}>
