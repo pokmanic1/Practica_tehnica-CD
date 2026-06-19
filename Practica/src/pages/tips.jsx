@@ -118,12 +118,12 @@ function Tips() {
         className="w-full min-h-[95dvh] min-w-[375px] flex items-center justify-start bg-cover bg-no-repeat bg-right px-4 py-16"
         style={{ backgroundImage: `url("${bg1}")` }}
       >
-        <div className='flex items-center justify-center w-full sm:w-[50%]'>
-          <div className="w-full max-w-2xl md:mr-auto flex flex-col gap-6 text-center ">
-            <h1 className="text-4xl bg-white/50 backdrop-blur-lg rounded-2xl font-poppins md:text-5xl font-semibold text-black drop-shadow-sm leading-tight">
+        <div className='flex items-center justify-center w-full md:w-[50%]'>
+          <div className="w-full max-w-2xl md:mr-auto flex flex-col  items-center justify-center  gap-6 text-center ">
+            <h1 className="text-4xl bg-white/50 p-2 backdrop-blur-lg rounded-2xl font-poppins md:text-5xl font-semibold text-black drop-shadow-sm leading-tight">
               Sfaturi <br className="hidden md:block " />pentru animalul tău
             </h1>
-            <p className="bg-white/50 backdrop-blur-lg rounded-2xl p-2 text-center md:text-lg   max-w-md mx-auto">
+            <p className="bg-white/50 backdrop-blur-lg rounded-2xl  text-center md:text-lg   max-w-md mx-auto">
               Îngrijire profesională, informații de încredere și cele mai bune
               practici pentru fiecare etapă a vieții animalului tău.
             </p>
