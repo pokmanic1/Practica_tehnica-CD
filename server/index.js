@@ -5,13 +5,53 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import pool from './db.js';
 
+console.log(bcrypt)
+
 dotenv.config();
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("Linia de mai jos este dotenv.config()")
+// console.log(dotenv.config())
+
+
+
 const app = express();
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("Linia de mai jos este app adica express ")
+// console.log(app);
+
+
+
 app.use(cors());
+//Cross-Origin Resource Sharing
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("Linia de mai jos este app.use(cors())")
+// console.log(app.use(cors()));
+
+
 app.use(express.json());
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("------------------------------------------------------------------")
+// console.log("Linia de mai jos este app.use(express.json())")
+// console.log(app.use(express.json()));
+
+
+
 
 // ── ÎNREGISTRARE ──────────────────────────────────────
 app.post('/api/register', async (req, res) => {
+
+
+    
+
+
+
     const { nume, email, password } = req.body;
     try {
         const hashedPassword = await bcrypt.hash(password, 10);

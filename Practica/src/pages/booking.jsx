@@ -1,21 +1,44 @@
 import { useState } from "react";
-
+import mesajEroare from "../utilitati/mesajEroare";
 function Booking() {
+    const [mesajErr, setMesajErr] = useState("");
+    const [culoare, setCuloare] = useState("");
     const [nume, setName] = useState("");
     const [telefon, setTelefon] = useState("");
     const [animal, setAnimal] = useState("");
     const [data, setData] = useState("");
     const [tipProgramare, setTipProgramare] = useState("");
 
+
     async function onSubmit() {
+
+        const campuriDeValidat = [
+            { valoare: nume, numeCamp: "Nume" },
+            { valoare: telefon, numeCamp: "Nr. Telefon" },
+            { valoare: animal, numeCamp: "Animal vătămat" },
+            { valoare: data, numeCamp: "Data" },
+            { valoare: tipProgramare, numeCamp: "Tipul programării" }
+        ];
+
+        const err = mesajEroare(campuriDeValidat);
+
+        if (err !== '') {
+            setCuloare("text-red-600");
+            setMesajErr(err);
+            return;
+        }
         const res = await fetch('http://localhost:3001/api/booking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nume, telefon, animal, data, tipProgramare })
         });
         const d = await res.json();
-        if (d.success) alert('Programare creată!');
+        if (d.success) setMesajErr('Programare creată!'); setCuloare("text-green-600");
     }
+
+
+
+
     return (
         <>
             <section className="min-w-[375px] min-h-[95dvh] h-[95dvh] w-full flex items-center justify-center text-white bg-cover bg-right bg-no-repeat">
@@ -96,22 +119,23 @@ function Booking() {
                             <option value="Grooming">Grooming</option>
                         </select>
                     </div>
-
-                    <button
-                        onClick={onSubmit}
-                        type="submit"
-                        className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
+                    <div>
+                        <p value={mesajErr} className={`mesajEroare text-[14px] text-black text-center m-0 ${culoare} `}>{mesajErr}</p>
+                        <button
+                            onClick={onSubmit}
+                            type="submit"
+                            className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
                             ${nume !== "" &&
-                                telefon !== "" &&
-                                animal !== "" &&
-                                data !== "" &&
-                                tipProgramare !== ""
-                                ? "bg-black text-white"
-                                : "bg-gray-200 text-black"
-                            }`}
-                    >
-                        Creează programare
-                    </button>
+                                    telefon !== "" &&
+                                    animal !== "" &&
+                                    data !== "" &&
+                                    tipProgramare !== ""
+                                    ? "bg-black text-white"
+                                    : "bg-gray-200 text-black"
+                                }`}>
+                            Creează programare
+                        </button>
+                    </div>
                 </div>
             </section>
         </>
