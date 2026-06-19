@@ -1,6 +1,9 @@
 import { useState } from "react";
+import mesajEroare from "../utilitati/mesajEroare";
 
 function Conecteazate() {
+    const [mesajErr, setMesajErr] = useState("");
+    const [culoare, setCuloare] = useState("");
     const [email1, setEmail] = useState("");
     const [password1, setPassword] = useState("");
 
@@ -13,6 +16,19 @@ function Conecteazate() {
 
     }
     async function onSubmit() {
+
+        const campuriDeValidat = [
+            { valoare: email1, numeCamp: "Nume" },
+            { valoare: password1, numeCamp: "Nr. Telefon" }
+        ];
+        const err = mesajEroare(campuriDeValidat);
+
+        if (err !== '') {
+            setCuloare("text-red-600");
+            setMesajErr(err);
+            return;
+        }
+
         const res = await fetch('http://localhost:3001/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -21,7 +37,7 @@ function Conecteazate() {
         const data = await res.json();
         if (data.success) {
             localStorage.setItem('token', data.token);
-            alert('Bine ai venit, ' + data.nume);
+            setMesajErr('Bine ai venit'); setCuloare("text-green-600")
         } else alert('Eroare: ' + data.error);
     }
 
@@ -60,14 +76,18 @@ function Conecteazate() {
                             placeholder="Introduceți parola..."
                             className="w-full px-5 py-3 rounded-[12px] border border-stone-400 bg-transparent text-gray-700 outline-none transition-all focus:border-stone-600 focus:ring-1 focus:ring-stone-600" />
                     </div>
-                    <button id="registerBtn" onClick={onSubmit}
-                        className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
-                                ${email !== "" && password !== ""
-                                ? "bg-black text-white"
-                                : "bg-gray-200 text-black"
-                            }`}>
-                        Creează un Cont
-                    </button>
+                    <div>
+                        <p value={mesajErr} className={`mesajEroare text-[14px] text-black text-center m-0 ${culoare} `}>{mesajErr}</p>
+
+                        <button id="registerBtn" onClick={onSubmit}
+                            className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
+                                ${email1 !== "" && password1 !== ""
+                                    ? "bg-black text-white"
+                                    : "bg-gray-200 text-black"
+                                }`}>
+                            Creează un Cont
+                        </button>
+                    </div>
                 </div>
 
 
