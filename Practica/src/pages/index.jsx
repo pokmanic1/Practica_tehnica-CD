@@ -113,9 +113,9 @@ function Index() {
                 style={{ backgroundImage: `url(${bgImage})` }}>
 
                 <div className='h-full w-full flex justify-center items-center md:w-[50%] md:mr-auto  '>
-                    <div className='  w-[60%] md:w-[100%] max-w-[700px]  text-center flex items-center justify-center flex-col gap-8 '>
-                        <h1 className='md:bg-transparent  text-[30px] md:text-[40px] lg:text-[48px] px-[10px] text-white '>TITLE</h1>
-                        <p className='text-[16px] text-white md:bg-transparent  px-[10px]'><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique corporis distinctio eaque doloribus tempora libero excepturi enim veritatis est in provident hic aspernatur,</span><span className='md:flex hidden'> dolores esse dolorem amet rem, expedita neque cumque ut culpa! Quis voluptas, laboriosam doloribus reprehenderit dolores necessitatibus similique ut, consequuntur vel optio nisi, consequatur ea obcaecati!</span></p>
+                    <div className='  w-[60%] md:w-[100%] max-w-[500px]  text-center flex items-center justify-center flex-col gap-8 '>
+                        <h1 className='md:bg-transparent  text-[30px] md:text-[40px] lg:text-[48px] px-[10px] text-white '>Pet Care</h1>
+                        <p className='text-[16px] text-white md:bg-transparent  px-[10px]'><span>La Pet Care, oferim servicii medicale complete și îngrijire de top pentru animalele de companie.</span><span className='md:flex hidden'> </span> O echipă de medici veterinari dedicați este gata să asigure o viață fericită și sănătoasă ghemotocului tău de blană</p>
 
                         <div className=' flex w-full justify-center items-center gap-3'>
 
