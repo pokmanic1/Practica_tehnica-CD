@@ -33,7 +33,7 @@ function Booking() {
             body: JSON.stringify({ nume, telefon, animal, data, tipProgramare })
         });
         const d = await res.json();
-        if (d.success) setMesajErr('Programare creată!'); setCuloare("text-green-600");
+        if (d.success) {setMesajErr('Programare creată!'); setCuloare("text-green-600");}
     }
 
 

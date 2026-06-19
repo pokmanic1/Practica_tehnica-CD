@@ -1,6 +1,9 @@
 import { useState } from "react";
+import mesajEroare from "../utilitati/mesajEroare";
 
 function Inregistreazate() {
+    const [mesajErr, setMesajErr] = useState("");
+    const [culoare, setCuloare] = useState("");
     const [nume, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -9,7 +12,7 @@ function Inregistreazate() {
 
     }
     function onChangeEmail(e) {
-        setEmail(e.target.value);
+        setEmail(e.target.value);   
 
     }
     function onChangePassword(e) {
@@ -17,14 +20,26 @@ function Inregistreazate() {
 
     }
     async function onSubmit() {
+        const campuriDeValidat = [
+            { valoare: nume, numeCamp: "Nume" },
+            { valoare: email, numeCamp: "email" },
+            { valoare: password, numeCamp: "parola" }
+        ];
+        const err = mesajEroare(campuriDeValidat);
+
+        if (err !== '') {
+            setCuloare("text-red-600");
+            setMesajErr(err);
+            return;
+        }
         const res = await fetch('http://localhost:3001/api/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nume, email, password })
         });
         const data = await res.json();
-        if (data.success) alert('Cont creat cu succes!');
-        else alert('Eroare: ' + data.error);
+        if (data.success) { setMesajErr('Bine ai venit'); setCuloare("text-green-600") }
+        else setMesajErr('Eroare: ' + data.error);
     }
 
 
@@ -74,20 +89,22 @@ function Inregistreazate() {
                             placeholder="Introduceți parola..."
                             className="w-full px-5 py-3 rounded-[12px] border border-stone-400 bg-transparent text-gray-700 outline-none transition-all focus:border-stone-600 focus:ring-1 focus:ring-stone-600" />
                     </div>
-                    <button
-                        id="loginBtn"
-                        type="submit"
-                        onClick={onSubmit}
-                        className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
-                                ${nume !== "" && email !== "" && password !== ""
-                                ? "bg-black text-white"
-                                : "bg-gray-200 text-black"
-                            }`}
-                    >
-                        Creaza un cont
-                    </button>
-                </div>
+                    <div>
+                        <p value={mesajErr} className={`mesajEroare text-[14px] text-black text-center m-0 ${culoare} `}>{mesajErr}</p>
 
+                        <button
+                            id="loginBtn"
+                            type="submit"
+                            onClick={onSubmit}
+                            className={`w-full sm:w-[450px] py-3 border border-white scale-95 hover:scale-105 transition-transform duration-300 ease-in-out rounded-full mt-3 font-medium transition-all duration-300
+                                ${nume !== "" && email !== "" && password !== ""
+                                    ? "bg-black text-white"
+                                    : "bg-gray-200 text-black"
+                                }`}>
+                            Creaza un cont
+                        </button>
+                    </div>
+                </div>
 
             </section>
         </>

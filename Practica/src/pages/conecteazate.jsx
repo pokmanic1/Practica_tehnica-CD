@@ -18,8 +18,8 @@ function Conecteazate() {
     async function onSubmit() {
 
         const campuriDeValidat = [
-            { valoare: email1, numeCamp: "Nume" },
-            { valoare: password1, numeCamp: "Nr. Telefon" }
+            { valoare: email1, numeCamp: "email" },
+            { valoare: password1, numeCamp: "parola" }
         ];
         const err = mesajEroare(campuriDeValidat);
 
@@ -38,7 +38,7 @@ function Conecteazate() {
         if (data.success) {
             localStorage.setItem('token', data.token);
             setMesajErr('Bine ai venit'); setCuloare("text-green-600")
-        } else alert('Eroare: ' + data.error);
+        } else setMesajErr('Eroare: ' + data.error);
     }
 
     const btn = document.getElementById('loginBtn')
