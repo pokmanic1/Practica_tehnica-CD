@@ -18,7 +18,7 @@ function Contact() {
     }
     async function onSubmit() {
         const campuriDeValidat = [
-            { valoare: numeContact, numeCamp: "Nume" },
+            { valoare: numeContact, numeCamp: "N    ume" },
             { valoare: nrTelefonContact, numeCamp: "nrTelefon" },
             { valoare: recenzieContact, numeCamp: "recenzie" }
         ];

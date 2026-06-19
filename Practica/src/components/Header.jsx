@@ -1,0 +1,35 @@
+function Header() {
+
+    return (
+        <>
+            <head>
+                <meta charset="UTF-8" />
+                <link rel="icon" type="image/png" href="../../img/Logo.svg" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                <title>Pet Care</title>
+
+                <meta name="description" content="Clinica veterinară Pet Care oferă servicii medicale de calitate, vaccinare, chirurgie și sfaturi utile pentru îngrijirea animalelor tale de companie." />
+
+                <meta name="keywords" content="clinica veterinara, pet care, medic veterinar, ingrijire animale, programare veterinar, tratamente caini, tratamente pisici, Cahul" />
+
+                <meta name="author" content="Cirjeu Dumitru " />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Pet Care | Clinică Veterinară" />
+                <meta property="og:description" content="Servicii medicale complete și sfaturi utile pentru prietenul tău necuvântător." />
+                {/* imaginea de prezentare */}
+                <meta property="og:image" content="" />
+
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+            </head>
+        </>
+
+    );
+
+
+}
+
+export default Header;

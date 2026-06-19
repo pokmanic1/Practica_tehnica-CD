@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Header from './components/Header'
+
+
 
 import Home from './pages/index'
 import Booking from './pages/booking'
@@ -13,6 +16,7 @@ import Inregistreazate from './pages/inregistreazate'
 function App() {
   return (
     <BrowserRouter>
+    <Header/>
       <Navbar />
 
       <Routes>
