@@ -54,6 +54,7 @@ app.post('/api/register', async (req, res) => {
         );
         res.json({ success: true, userId: result.rows[0].id });
     } catch (err) {
+        console.error('Eroare la /api/register:', err);
         res.status(400).json({ error: err.message });
     }
 });
@@ -75,6 +76,7 @@ app.post('/api/login', async (req, res) => {
         const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
         res.json({ success: true, token, nume: user.nume });
     } catch (err) {
+        console.error('Eroare la /api/login:', err);
         res.status(500).json({ error: err.message });
     }
 });
@@ -96,6 +98,7 @@ app.post('/api/booking', async (req, res) => {
         );
         res.json({ success: true });
     } catch (err) {
+        console.error('Eroare la /api/booking:', err);
         res.status(500).json({ error: err.message });
     }
 });
@@ -110,6 +113,7 @@ app.post('/api/contact', async (req, res) => {
         );
         res.json({ success: true });
     } catch (err) {
+        console.error('Eroare la /api/contact:', err);
         res.status(500).json({ error: err.message });
     }
 });
