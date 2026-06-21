@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import pool from './db.js';
 
-console.log(bcrypt)
 
 dotenv.config();
 // console.log("------------------------------------------------------------------")
@@ -16,7 +15,7 @@ dotenv.config();
 
 
 
-const app = express();
+    const app = express();
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
@@ -46,11 +45,6 @@ app.use(express.json());
 
 // ── ÎNREGISTRARE ──────────────────────────────────────
 app.post('/api/register', async (req, res) => {
-
-
-    
-
-
 
     const { nume, email, password } = req.body;
     try {

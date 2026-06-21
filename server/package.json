@@ -5,13 +5,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start1": "node exprs.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",

@@ -123,7 +123,7 @@ function Index() {
                             <div className=' flex md:hidden'><AncoraColorata title='Programeazata' ancora='' /></div>
                             <div><AncoraSur title='aaaaaaaaaaa' ancora='' /></div>
 
-                        </div>
+                        </div>  
                     </div>
                 </div>
 
