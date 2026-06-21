@@ -143,12 +143,6 @@ function Team() {
                                     <p className="text-[13px] text-gray-500 leading-5 flex-1">
                                         {membru.descriere}
                                     </p>
-                                    <a
-                                        href="/booking"
-                                        className="mt-5 inline-block w-full text-center px-4 py-2 bg-gradient-to-r from-[#4CAF50] to-[#2196F3] text-white text-[13px] rounded-full hover:opacity-90 transition-opacity"
-                                    >
-                                        Programează o vizită
-                                    </a>
                                 </div>
                             </div>
                         ))}

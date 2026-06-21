@@ -32,10 +32,10 @@ function Service() {
                 style={{ backgroundImage: `url(${bgServicii})` }}
             >
                 <div className="text-center px-6 py-16">
-                    <h1 className="text-[32px] md:text-[44px] lg:text-[56px] font-bold text-white drop-shadow-lg">
+                    <h1 className="text-[32px] md:text-[44px] lg:text-[56px] font-bold text-black drop-shadow-lg">
                         Serviciile noastre
                     </h1>
-                    <p className="mt-4 text-[16px] md:text-[20px] text-white/90 max-w-[600px] mx-auto drop-shadow">
+                    <p className="mt-4 text-[16px] md:text-[20px] text-black    /90 max-w-[600px] mx-auto drop-shadow">
                         Îngrijire completă pentru animalul tău de companie — de la consultații la grooming
                     </p>
                 </div>
@@ -63,7 +63,7 @@ function Service() {
                                 className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col overflow-hidden"
                             >
                                 <div className="bg-gradient-to-br from-green-50 to-blue-50 px-5 pt-6 pb-4 flex flex-col items-center text-center">
-                                    <span className="text-[48px] mb-3">{serviciu.icon}</span>
+                                    
                                     <span className="text-[11px] font-medium uppercase tracking-wide text-[#2196F3] bg-blue-50 border border-blue-100 px-3 py-1 rounded-full">
                                         {serviciu.categorie}
                                     </span>
