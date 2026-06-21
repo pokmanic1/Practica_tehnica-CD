@@ -43,7 +43,6 @@ app.use(express.json());
 
 
 
-// ── ÎNREGISTRARE ──────────────────────────────────────
 app.post('/api/register', async (req, res) => {
 
     const { nume, email, password } = req.body;
@@ -59,7 +58,6 @@ app.post('/api/register', async (req, res) => {
     }
 });
 
-// ── LOGIN ─────────────────────────────────────────────
 app.post('/api/login', async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -80,20 +78,35 @@ app.post('/api/login', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
-//
+
 app.get('/api/test', (req, res) => {
     res.json({
         success: true,
         message: 'Serverul functioneaza!'
     });
 });
-// ── BOOKING ───────────────────────────────────────────
+
+
 app.post('/api/booking', async (req, res) => {
     const { nume, telefon, animal, data, tipProgramare } = req.body;
     try {
         await pool.query(
             'INSERT INTO programari (nume, telefon, animal, data, tip_programare) VALUES ($1, $2, $3, $4, $5)',
             [nume, telefon, animal, data, tipProgramare]
+        );
+        res.json({ success: true });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+
+app.post('/api/contact', async (req, res) => {
+    const { numeContact, nrTelefonContact, recenzieContact } = req.body;
+    try {
+        await pool.query(
+            'INSERT INTO contact (nume, telefon, recenzia) VALUES ($1, $2, $3)',
+            [numeContact, nrTelefonContact, recenzieContact]
         );
         res.json({ success: true });
     } catch (err) {

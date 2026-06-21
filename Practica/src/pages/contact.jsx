@@ -29,8 +29,15 @@ function Contact() {
             setMesajErr(err);
             return;
         }
+        const res = await fetch('http://localhost:3001/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ numeContact, nrTelefonContact, recenzieContact})
+        })
+                const d = await res.json();
+        if (d.success) {setMesajErr('Recenzia primita'); setCuloare("text-green-600");}
 
-        setMesajErr('Recenzia primita'); setCuloare("text-green-600")
+
 
     }
 

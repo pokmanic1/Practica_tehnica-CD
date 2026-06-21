@@ -108,6 +108,7 @@ function Index() {
     ];
     return (
         <>
+        
             <section
                 className="min-w-[375px] min-h-[95dvh] h-[95dvh] w-full flex items-center justify-center text-white bg-cover bg-center   bg-no-repeat "
                 style={{ backgroundImage: `url(${bgImage})` }}>
