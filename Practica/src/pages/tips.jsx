@@ -123,7 +123,7 @@ function Tips() {
             <h1 className="text-4xl bg-white/50 p-2 backdrop-blur-lg rounded-2xl font-poppins md:text-5xl font-semibold text-black drop-shadow-sm leading-tight">
               Sfaturi <br className="hidden md:block " />pentru animalul tău
             </h1>
-            <p className="bg-white/50 backdrop-blur-lg rounded-2xl  text-center md:text-lg   max-w-md mx-auto">
+            <p className="bg-white/50 backdrop-blur-lg rounded-2xl p-2  text-center md:text-lg   max-w-md mx-auto">
               Îngrijire profesională, informații de încredere și cele mai bune
               practici pentru fiecare etapă a vieții animalului tău.
             </p>
