@@ -30,7 +30,7 @@ function Contact() {
             setMesajErr(err);
             return;
         }
-        const res = await fetch(`${API_URL}/api/login`, {
+        const res = await fetch(`${API_URL}/api/contact`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ numeContact, nrTelefonContact, recenzieContact})

@@ -36,7 +36,7 @@ function Inregistreazate() {
             setMesajErr(err);
             return;
         }
-        const res = await fetch(`${API_URL}/api/login`, {
+        const res = await fetch(`${API_URL}/api/booking`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nume, email, password })

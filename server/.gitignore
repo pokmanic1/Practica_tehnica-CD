@@ -1,5 +1,6 @@
 # Dependențe
 node_modules
+dist
  
 # Variabile de mediu (date sensibile - parole, secrete)
 .env
