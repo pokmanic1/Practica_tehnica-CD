@@ -8,11 +8,11 @@ function Footer() {
 
                         <div>
                             <h3 className="text-xl font-semibold mb-4">
-                                Numele companiei
+                                Pet Care
                             </h3>
 
                             <p className="text-gray-400 text-sm">
-                                Scurtă descriere a companiei / ce face site-ul
+                                La Pet Care, oferim servicii medicale complete și îngrijire de top pentru animalele de companie
                             </p>
                         </div>
 
@@ -20,9 +20,9 @@ function Footer() {
                             <h4 className="font-semibold mb-4">Contact</h4>
 
                             <ul className="space-y-2 text-gray-400 text-sm">
-                                <li>Email: email@exemplu.com</li>
+                                <li>Email: pet-care@gmail.com</li>
                                 <li>Telefon: +373 XX XXX XXX</li>
-                                <li>Adresă: Adresa companiei</li>
+                                <li>Adresă: Centru</li>
                             </ul>
                         </div>
 
@@ -30,9 +30,9 @@ function Footer() {
                             <h4 className="font-semibold mb-4">Informații</h4>
 
                             <ul className="space-y-2 text-gray-400 text-sm">
-                                <li>[Scopul / intenția site-ului]</li>
-                                <li>[Principalele servicii sau produse]</li>
-                                <li>[Publicul țintă]</li>
+                                <li>Scopul : salvarea animalelor</li>
+                                <li>Vacinare , curatare </li>
+                                <li>Pentru toate animalele</li>
                             </ul>
                         </div>
 
@@ -40,17 +40,17 @@ function Footer() {
                             <h4 className="font-semibold mb-4">Linkuri utile</h4>
 
                             <ul className="space-y-2 text-gray-400 text-sm">
-                                <li>[Politica de confidențialitate]</li>
-                                <li>[Termeni și condiții]</li>
-                                <li>[Întrebări frecvente]</li>
-                                <li>[Rețele sociale]</li>
+                                <li>Politica de confidențialitate</li>
+                                <li>Termeni și condiții</li>
+                                <li>Întrebări frecvente</li>
+                                <li>Rețele sociale</li>
                             </ul>
                         </div>
 
                     </div>
 
                     <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
-                        © [Anul] [Numele companiei]. Toate drepturile rezervate.
+                        © 2026. Pet Care . Toate drepturile rezervate.
                     </div>
                 </div>
             </footer>
