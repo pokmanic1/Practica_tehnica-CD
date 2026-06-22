@@ -1,5 +1,6 @@
-import { useState } from "react";
-import auth from 'auth.js'
+import { Link } from 'react-router-dom'
+import { useState, useEffect } from "react";    
+import auth from '../utilitati/auth'
 function AuthContent() {
 
 const [esteLogat, setEsteLogat] = useState(false)

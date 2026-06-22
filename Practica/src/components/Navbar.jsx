@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import AuthContent from '../utilitati/AuthContext'
-
 function Navbar() {
     
     useEffect(() => {
@@ -43,8 +42,6 @@ function Navbar() {
 
                 <div className='hidden md:flex items-center gap-[5px]  md:gap-[15px] lg:gap-[30px]  md:text-[14px] lg:text-[16px]  w-[20%] mr-1'>
                     
-                <Link to="/conecteazate" className='Conect'>Conecteazate</Link>
-                <Link to="/inregistreazate" className='Inreg'>Inregistreazate</Link>
                 <AuthContent/>
                 </div>
                 <button id="burgerBtn" className="md:hidden flex flex-col gap-1">
@@ -60,8 +57,6 @@ function Navbar() {
                 <Link to="/team" className='border-b border-gray-300'>Team</Link>
                 <Link to="/tips" className='border-b border-gray-300'>Tips</Link>
                 <Link to="/contact" className='border-b border-gray-300'>Contact</Link>
-                <Link to="/conecteazate" className='Conect border-b border-gray-300'>Conecteazate</Link>
-                <Link to="/inregistreazate" className='Inreg border-b border-gray-300'>inregistreazate</Link>
                 <AuthContent/>
             </div>
         </nav>
