@@ -1,9 +1,9 @@
 import redirect from "../utilitati/redirect";
 import { useState } from "react";
 import mesajEroare from "../utilitati/mesajEroare";
-
+import { useNavigate } from 'react-router-dom';
 function Conecteazate() {
-    redirect();
+    const navigate = useNavigate();
 
     const [mesajErr, setMesajErr] = useState("");
     const [culoare, setCuloare] = useState("");
@@ -40,7 +40,11 @@ function Conecteazate() {
         const data = await res.json();
         if (data.success) {
             localStorage.setItem('token', data.token);
-            setMesajErr('Bine ai venit'); setCuloare("text-green-600")
+            setMesajErr('Bine ai venit');
+            setCuloare("text-green-600");
+            navigate('/');
+            
+            window.location.reload();
         } else setMesajErr('Eroare: ' + data.error);
     }
 

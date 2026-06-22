@@ -1,7 +1,10 @@
 import { useState } from "react";
 import mesajEroare from "../utilitati/mesajEroare";
-
+import { useNavigate } from 'react-router-dom';
 function Inregistreazate() {
+    const navigate = useNavigate();
+
+
     const [mesajErr, setMesajErr] = useState("");
     const [culoare, setCuloare] = useState("");
     const [nume, setName] = useState("");
@@ -12,7 +15,7 @@ function Inregistreazate() {
 
     }
     function onChangeEmail(e) {
-        setEmail(e.target.value);   
+        setEmail(e.target.value);
 
     }
     function onChangePassword(e) {
@@ -38,7 +41,15 @@ function Inregistreazate() {
             body: JSON.stringify({ nume, email, password })
         });
         const data = await res.json();
-        if (data.success) { setMesajErr('Bine ai venit'); setCuloare("text-green-600") }
+        if (data.success) {
+            localStorage.setItem('token', data.token);
+            setMesajErr('Bine ai venit');
+            setCuloare("text-green-600");
+            navigate('/');
+
+            window.location.reload();
+
+        }
         else setMesajErr('Eroare: ' + data.error);
     }
 

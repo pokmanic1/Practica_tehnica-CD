@@ -9,7 +9,7 @@ useEffect(() => {
     if (localStorage.getItem('token')) {
         setEsteLogat(true)
     }
-}, []) 
+}, [])
 
     return (
     <>

@@ -15,7 +15,7 @@ dotenv.config();
 
 
 
-    const app = express();
+const app = express();
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
@@ -44,18 +44,23 @@ app.use(express.json());
 
 
 app.post('/api/register', async (req, res) => {
-
     const { nume, email, password } = req.body;
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
         const result = await pool.query(
-            'INSERT INTO utilizatori (nume, email, parola) VALUES ($1, $2, $3) RETURNING id',
+            'INSERT INTO utilizatori (nume, email, parola) VALUES ($1, $2, $3) RETURNING id, nume, email',
             [nume, email, hashedPassword]
         );
-        res.json({ success: true, userId: result.rows[0].id });
-        const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
+        const user = result.rows[0];
+
+        const token = jwt.sign(
+            { id: user.id, email: user.email, nume: user.nume },
+            process.env.JWT_SECRET,
+            { expiresIn: '7d' }
+        );
+
         res.json({ success: true, token, nume: user.nume });
-        localStorage.setItem('token', data.token);
+
     } catch (err) {
         console.error('Eroare la /api/register:', err);
         res.status(400).json({ error: err.message });
@@ -76,10 +81,12 @@ app.post('/api/login', async (req, res) => {
         if (!valid)
             return res.status(401).json({ error: 'Email sau parolă incorectă' });
 
-        const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
-        res.json({ success: true, token, nume: user.nume });
-        localStorage.setItem('token', data.token);
-
+        const token = jwt.sign(
+            { id: user.id, email: user.email, nume: user.nume },
+            process.env.JWT_SECRET,
+            { expiresIn: '7d' }
+        );
+        res.json({ success: true, token, nume: user.nume }); // doar asta
     } catch (err) {
         console.error('Eroare la /api/login:', err);
         res.status(500).json({ error: err.message });
