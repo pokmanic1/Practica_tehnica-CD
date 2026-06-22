@@ -123,14 +123,14 @@ function Index() {
 
                             <div className='md:flex hidden'><AncoraColorata title='Progameazate la o consultatie' ancora='/booking' /></div>
                             <div className=' flex md:hidden'><AncoraColorata title='Programeazata' ancora='' /></div>
-                            <div><AncoraSur title='aaaaaaaaaaa' ancora='' /></div>
+                            <div><AncoraSur title='Afla mai multe' ancora='/contact' /></div>
 
                         </div>  
                     </div>
                 </div>
 
             </section>
-            <section className='w-full min-h-dvh bg-white flex justify-center items-center px-4 py-10'>
+            <section id='a' className='w-full min-h-dvh bg-white flex justify-center items-center px-4 py-10'>
                 <div
                     className='
                             border border-black rounded-2xl w-full md:w-[90%] xl:w-[80%] max-w-[1500px] min-h-[500px] flex flex-col justify-center items-start px-6 sm:px-10 lg:px-[50px] bg-cover bg-no-repeat bg-right'
@@ -157,13 +157,13 @@ function Index() {
 
                         <AncoraColorata
                             title='Vezi Echipa'
-                            ancora='/team' />
+                            ancora='team' />
                     </div>
                 </div>
             </section>
 
 
-            <section className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'
+            <section id="team" className='w-full min-h-[95dvh]  bg-white flex justify-center items-center px-4 py-10 bg-cover bg-no-repeat bg-center'
                 style={{ backgroundImage: `url("${index_sectiunea_ServiciiPrincipal}")` }}>
                 <div className='w-[98%] md:w-[95%] lg:w-[80%]'>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-[10px] sm:gap-[20px]'>
