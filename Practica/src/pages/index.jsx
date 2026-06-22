@@ -18,6 +18,7 @@ import index_sectiunea_DeCePet from '../../img/img-index/Img-index-sectiunea-DeC
 import { AncoraColorata, AncoraSur } from "../utilitati/butoane.jsx";
 
 function Index() {
+
     let a = '/Practica/img/img-index/img-index-bg-1.svg'
     const items = [
         {

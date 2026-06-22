@@ -1,7 +1,10 @@
+import redirect from "../utilitati/redirect";
 import { useState } from "react";
 import mesajEroare from "../utilitati/mesajEroare";
 
 function Conecteazate() {
+    redirect();
+
     const [mesajErr, setMesajErr] = useState("");
     const [culoare, setCuloare] = useState("");
     const [email1, setEmail] = useState("");

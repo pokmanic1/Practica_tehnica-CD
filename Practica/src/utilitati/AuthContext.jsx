@@ -10,6 +10,7 @@ useEffect(() => {
         setEsteLogat(true)
     }
 }, []) 
+
     return (
     <>
         {!esteLogat && (
@@ -21,7 +22,8 @@ useEffect(() => {
         )}
         {esteLogat && (
             
-            <button onClick={() => {
+            <button className='px-4 py-1 text-white scale-95 hover:scale-100 transition ease-in-out duration-300 bg-red-500 hover:bg-red-700 ml-auto rounded-2xl'
+            onClick={() => {
                 localStorage.removeItem('token')
                 setEsteLogat(false)
             }}>
