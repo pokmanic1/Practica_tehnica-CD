@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react"; import API_URL from '../utilitati/api'
+
 import mesajEroare from "../utilitati/mesajEroare";
 function Booking() {
     const [mesajErr, setMesajErr] = useState("");
@@ -27,13 +28,13 @@ function Booking() {
             setMesajErr(err);
             return;
         }
-        const res = await fetch('http://localhost:3001/api/booking', {
+        const res = await fetch(`${API_URL}/api/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nume, telefon, animal, data, tipProgramare })
         });
         const d = await res.json();
-        if (d.success) {setMesajErr('Programare creată!'); setCuloare("text-green-600");}
+        if (d.success) { setMesajErr('Programare creată!'); setCuloare("text-green-600"); }
     }
 
 

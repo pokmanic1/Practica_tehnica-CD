@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react";import API_URL from '../utilitati/api'
+
 import mesajEroare from "../utilitati/mesajEroare";
 function Contact() {
     const [mesajErr, setMesajErr] = useState("");
@@ -29,7 +30,7 @@ function Contact() {
             setMesajErr(err);
             return;
         }
-        const res = await fetch('http://localhost:3001/api/contact', {
+        const res = await fetch(`${API_URL}/api/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ numeContact, nrTelefonContact, recenzieContact})

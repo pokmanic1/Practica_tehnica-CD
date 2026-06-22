@@ -2,6 +2,8 @@ import redirect from "../utilitati/redirect";
 import { useState } from "react";
 import mesajEroare from "../utilitati/mesajEroare";
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../utilitati/api'
+
 function Conecteazate() {
     const navigate = useNavigate();
 
@@ -32,7 +34,7 @@ function Conecteazate() {
             return;
         }
 
-        const res = await fetch('http://localhost:3001/api/login', {
+        const res = await fetch(`${API_URL}/api/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: email1, password: password1 })

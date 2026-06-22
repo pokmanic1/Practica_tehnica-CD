@@ -1,6 +1,7 @@
 import { useState } from "react";
 import mesajEroare from "../utilitati/mesajEroare";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';import API_URL from '../utilitati/api'
+
 function Inregistreazate() {
     const navigate = useNavigate();
 
@@ -35,7 +36,7 @@ function Inregistreazate() {
             setMesajErr(err);
             return;
         }
-        const res = await fetch('http://localhost:3001/api/register', {
+        const res = await fetch(`${API_URL}/api/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nume, email, password })

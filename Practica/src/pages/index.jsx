@@ -150,7 +150,7 @@ function Index() {
                         <p
                             className='
                                     text-blacktext-center md:text-lefttext-[15px] mb-3 sm:text-[16px] lg:text-[18px]leading-7 lg:leading-8mb-8font-light'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            
                             Oferim grijă, profesionalism și atenție fiecărui animal,
                             pentru ca tu să ai liniștea că este pe cele mai bune mâini.
                         </p>
@@ -270,7 +270,7 @@ function Index() {
                 </div>
             </section>
 
-
+                
             <style>
                 {`
                     @keyframes scroll {
