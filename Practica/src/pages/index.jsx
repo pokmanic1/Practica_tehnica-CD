@@ -292,8 +292,8 @@ function Index() {
                     }
                 `}
             </style>
-            <section className='w-full min-h-[60dvh]  bg-white flex justify-center items-center px-4 py-[200px] bg-cover bg-no-repeat bg-center'>
-
+            <section className='w-full min-h-[60dvh] gap-[20px] bg-white flex flex-col justify-center items-center px-4 py-[200px] bg-cover bg-no-repeat bg-center'>
+                        <h1 className='font-poppins text-[40px] font-semibold'>Recenzii </h1>
                 <div className="overflow-hidden  my-auto w-[98%] sm:w-[90%] lg:w-[90%]  rounded-[40px] border-[5px] py-2 border-black">
                     <div className="flex items-center gap-[35px] animate-scroll">
                         {[...items, ...items].map((item, index) => (
