@@ -75,6 +75,8 @@ app.post('/api/login', async (req, res) => {
 
         const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
         res.json({ success: true, token, nume: user.nume });
+        localStorage.setItem('token', data.token);
+
     } catch (err) {
         console.error('Eroare la /api/login:', err);
         res.status(500).json({ error: err.message });

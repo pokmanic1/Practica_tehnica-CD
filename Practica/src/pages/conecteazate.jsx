@@ -41,8 +41,6 @@ function Conecteazate() {
         } else setMesajErr('Eroare: ' + data.error);
     }
 
-    const btn = document.getElementById('loginBtn')
-
 
     return (
         <>
