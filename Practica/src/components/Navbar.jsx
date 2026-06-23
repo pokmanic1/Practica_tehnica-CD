@@ -31,7 +31,6 @@ function Navbar() {
                         alt="logo"
                     />
                 </Link>
-
                 <div className='hidden md:flex items-center   md:text-[14px] lg:text-[16px]  gap-[20px]  lg:gap-[30px]  w-[80%] flex justify-center items-center'>
                     <Link to="/service">Service</Link>
                     <Link to="/booking">Booking</Link>
@@ -39,9 +38,7 @@ function Navbar() {
                     <Link to="/tips">Tips</Link>
                     <Link to="/contact">Contact</Link>
                 </div>
-
-                <div className='hidden md:flex items-center gap-[5px]  md:gap-[15px] lg:gap-[30px]  md:text-[14px] lg:text-[16px]  w-[20%] mr-1'>
-                    
+                <div className='hidden md:flex items-center gap-[5px]  md:gap-[15px] lg:gap-[30px]  md:text-[14px] lg:text-[16px]  w-[20%] mr-1'>                  
                 <AuthContent/>
                 </div>
                 <button id="burgerBtn" className="md:hidden flex flex-col gap-1">
@@ -50,7 +47,6 @@ function Navbar() {
                     <span className="w-6 h-[1px] bg-black"></span>
                 </button>
             </div>
-
             <div id="burgerMenu" className="hidden   md:hidden z-10 flex flex-col gap-4 py-4 absolute top-[60px] left-0 bg-white w-full pl-[10px]">
                 <Link to="/service" className='border-b border-gray-300'>Service</Link>
                 <Link to="/booking" className='border-b border-gray-300'>Booking</Link>

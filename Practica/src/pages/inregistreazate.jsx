@@ -54,8 +54,6 @@ function Inregistreazate() {
         else setMesajErr('Eroare: ' + data.error);
     }
 
-
-
     return (
         <>
             <section className="min-w-[375px] min-h-[95dvh] h-[95dvh] w-full flex items-center justify-center text-white bg-cover bg-right   bg-no-repeat">

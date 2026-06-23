@@ -335,6 +335,7 @@ function Index() {
                 </div>
             </section >
 
+
             <section className='w-full min-h-[90dvh] bg-white flex justify-center items-center px-4 pb-[100px]'>
                 <div className='w-full max-w-6xl bg-red-50 border-2 border-red-200 rounded-[40px] p-8 md:p-14 shadow-xl'>
 

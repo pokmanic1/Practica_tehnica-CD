@@ -13,16 +13,12 @@ dotenv.config();
 // console.log("Linia de mai jos este dotenv.config()")
 // console.log(dotenv.config())
 
-
-
 const app = express();
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
 // console.log("------------------------------------------------------------------")
 // console.log("Linia de mai jos este app adica express ")
 // console.log(app);
-
-
 
 app.use(cors());
 //Cross-Origin Resource Sharing
@@ -31,7 +27,6 @@ app.use(cors());
 // console.log("------------------------------------------------------------------")
 // console.log("Linia de mai jos este app.use(cors())")
 // console.log(app.use(cors()));
-
 
 app.use(express.json());
 // console.log("------------------------------------------------------------------")
@@ -86,7 +81,7 @@ app.post('/api/login', async (req, res) => {
             process.env.JWT_SECRET,
             { expiresIn: '7d' }
         );
-        res.json({ success: true, token, nume: user.nume }); // doar asta
+        res.json({ success: true, token, nume: user.nume }); 
     } catch (err) {
         console.error('Eroare la /api/login:', err);
         res.status(500).json({ error: err.message });
